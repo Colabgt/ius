@@ -17,13 +17,13 @@ const weather = require('weather-js');
 const  Telegram = require('telegraf');
 const app = new Telegram('797278660:AAH9P6t9lkDN3INtF8n5AQNqRNk30xpfzCk');
 
-bot.onText(/\/home/, (msg) => { 
+bot.onText(/\/init/, (msg) => { 
  var id = msg.chat.id;
  console.log(id);
  const schedule = require('node-schedule');
- var j = schedule.scheduleJob({hour: 20, minute: 1},function(){
+ var j = schedule.scheduleJob({hour: 6, minute: 1},function(){
     console.log('task');
-    app.telegram.sendMessage(id, "recuarda comer frutas y verduras"); 
+    app.telegram.sendMessage(id, "Recuerda cumplir tus retos"); 
   });
  });
 
@@ -317,7 +317,7 @@ bot.onText(/^\/chat/, function(msg){
     }
 });
 
-bot.onText(/boton/, (msg) => {
+bot.onText(/menu/, (msg) => {
      bot.sendMessage(msg.chat.id, 'Hola' + " " + msg.from.first_name + " Bienvenido al menu IUS 💪", {
         reply_markup: {
             inline_keyboard: [
