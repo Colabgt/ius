@@ -338,7 +338,7 @@ bot.onText(/menu/, (msg) => {
         const data = accionboton.data
         const msg = accionboton.message
         if(data == 'hastang'){
-                bot.sendPhoto(msg.chat.id,"https://res.cloudinary.com/dczpwulei/image/upload/v1542937598/FOTOS/InShot_20181122_194423826_1.jpg",{caption : "envia una foto con una descripción untilizando nuestros hashtag" + "\nUSO:" + "\nUSA LOS  HASHTAG DISPLONIBLES PARA CUMPLIR LOS RETOS Y LLEVAR TU PROGRESO." + "\nHASHTAG: #cardio #water #healthylife #healthyfood." } );
+                bot.sendPhoto(msg.chat.id,"https://res.cloudinary.com/dczpwulei/image/upload/v1542937598/FOTOS/InShot_20181122_194423826_1.jpg",{caption : "envia una foto con una descipcion untilizando nuestros hashtag" + "\nUSO:" + "\nUSA LOS  HASHTAG DISPLONIBLES PARA CUMPLIR LOS RETOS Y LLEVAR TU PROGRESO." + "\nHASHTAG: #cardio #water #healthylife #healthyfood." } );
             data = [];      
         };
         if(data == '31'){
